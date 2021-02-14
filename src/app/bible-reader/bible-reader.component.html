@@ -1,7 +1,16 @@
-<div id="container">
-  <strong>Ezequiel 41</strong> 
+<div>
   <br>
-  <ul>
-    <li>1. Hola que tal</li>
-  </ul>
+  <div class="ion-text-center">
+    <strong style="text-align: center;">{{book.name}} {{chapter.chapter}}</strong>
+  </div>
+
+  <ion-content [scrollEvents]="true" (ionScrollStart)="logScrollStart()" (ionScroll)="logScrolling($event)"
+    (ionScrollEnd)="logScrollEnd()">
+    <div slot="fixed">
+      <ul class="no-bullets">
+        <li *ngFor="let item of verses">{{item.verse}}. {{item.data}} <br><br></li>
+      </ul>
+    </div>
+  </ion-content>
+
 </div>
