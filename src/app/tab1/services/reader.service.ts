@@ -36,6 +36,7 @@ export class ReaderService {
     }
 
     getSpiritProphecy(params: any) {
-        return this.http.get(`${this.spiritProphecy}`, { params }).toPromise();
+        params['mode']='no-cors';
+        return this.http.get(`${this.spiritProphecy}`, {  params },).toPromise();
     }
 }

@@ -7,6 +7,7 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
 import {ReaderService} from '../tab1/services/reader.service';
 import { Tab1PageRoutingModule } from './tab1-routing.module';
 import { HttpClient, HttpHandler } from '@angular/common/http';
+import { MainContainerComponentModule } from '../main-container/main-container.module';
 
 @NgModule({
   imports: [
@@ -14,6 +15,7 @@ import { HttpClient, HttpHandler } from '@angular/common/http';
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
+    MainContainerComponentModule,
     Tab1PageRoutingModule
   ]
   ,providers:[

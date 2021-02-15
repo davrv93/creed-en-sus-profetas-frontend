@@ -1,0 +1,14 @@
+<div>
+  <br>
+  <div class="ion-text-center">
+    <strong style="text-align: center;"></strong>
+  </div>
+  <pdf-viewer [src]="pdfSrc" [render-text]="true" [original-size]="false" [autoresize]="true" style="display: block;">
+  </pdf-viewer>
+
+  <ion-content [scrollEvents]="true" (ionScrollStart)="logScrollStart()" (ionScroll)="logScrolling($event)"
+    (ionScrollEnd)="logScrollEnd()">
+    <div slot="fixed" style=" white-space: pre-wrap;">
+    </div>
+  </ion-content>
+</div>
