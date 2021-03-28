@@ -1,7 +1,10 @@
 {
   "name": "creed-en-sus-profetas",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {
+      "enabled": false
+    },
+    "cordova": {}
   },
   "type": "angular",
   "id": "99fc97ff"

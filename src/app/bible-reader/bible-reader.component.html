@@ -4,9 +4,10 @@
     <strong style="text-align: center;">{{book.name}} {{chapter.chapter}}</strong>
   </div>
 
-  <ion-content [scrollEvents]="true" (ionScrollStart)="logScrollStart()" (ionScroll)="logScrolling($event)"
-    (ionScrollEnd)="logScrollEnd()">
-    <div slot="fixed">
+  <ion-content class="has-tabs-bottom has-tabs-down">
+    <div slot="fixed" style="margin-right: 30px;  text-align: justify;
+     text-justify: inter-word;
+    ">
       <ul class="no-bullets">
         <li *ngFor="let item of verses">{{item.verse}}. {{item.data}} <br><br></li>
       </ul>

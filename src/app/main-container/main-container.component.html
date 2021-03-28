@@ -6,8 +6,7 @@
   <pdf-viewer [src]="pdfSrc" [render-text]="true" [original-size]="false" [autoresize]="true" style="display: block;">
   </pdf-viewer>
 
-  <ion-content [scrollEvents]="true" (ionScrollStart)="logScrollStart()" (ionScroll)="logScrolling($event)"
-    (ionScrollEnd)="logScrollEnd()">
+  <ion-content>
     <div slot="fixed" style=" white-space: pre-wrap;">
     </div>
   </ion-content>

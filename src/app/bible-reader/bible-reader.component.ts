@@ -8,8 +8,12 @@ import { ReaderService } from '../tab1/services/reader.service';
 })
 export class BibleReaderComponent implements OnInit {
   @Input() name: string;
-  book = {};
-  chapter = {};
+  book = {
+    name: ''
+  };
+  chapter = {
+    chapter: ''
+  };
   verses = [];
   constructor(
     private readerService: ReaderService
